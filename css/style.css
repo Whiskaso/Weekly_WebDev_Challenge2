@@ -6,6 +6,10 @@ BASE ELEMENT STYLE
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     color: rgb(38, 38, 38);
@@ -74,6 +78,11 @@ input {
 /* ==============================
 BASE LAYOUT STYLES
 =============================== */
+
+.main-header {
+    background-color: #fff;
+    width: 100%;
+}
 
 .main-header,
 .main-footer {
@@ -308,11 +317,11 @@ BASE LAYOUT STYLES
     margin: 0 auto;
 }
 
-.wrapper-60 {
+.text-wrapper {
     width: 60%;
 }
 
-.wrapper-70 {
+.bigger-text-wrapper {
     width: 70%;
 }
 
@@ -347,3 +356,120 @@ BASE LAYOUT STYLES
   /* ================================= 
   Media Queries
 ==================================== */
+
+
+@media (min-width: 640px){
+
+
+/*====== NAV BAR ======*/
+
+.main-nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*====== FOOTER ========*/
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ============ LAYOUR CONTAINERS ============ */
+
+.wrapper {
+    width: 80%;
+}
+
+.text-wrapper {
+    width: 50%;
+}
+
+.bigger-text-wrapper {
+    width: 65%;
+}
+
+/*================= SECTIONS ==============*/
+
+/*========= SERVICES ========*/
+
+.buttons-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+}
+
+@media (min-width: 880px) {
+
+/*====== NAV BAR =======*/
+
+.main-nav,
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav {
+    justify-content: space-between;
+}
+
+.main-nav li {
+    padding-top: 49px;
+}
+
+/*================= SECTIONS ==============*/
+
+/*========= SERVICES ========*/
+
+.buttons-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* ============ LAYOUR CONTAINERS ============ */
+
+.text-wrapper {
+    width: 40%;
+}
+
+.bigger-text-wrapper {
+    width: 55%;
+}
+}
+
+@media (min-width: 1025px) {
+
+/*====== NAV BAR =======*/
+
+.main-nav li {
+    padding-left: 25px;
+    padding-top: 41px;
+}
+
+.main-header {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+
+/*================= SECTIONS ==============*/
+
+/*========= SERVICES ========*/
+
+.buttons-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* ============ LAYOUR CONTAINERS ============ */
+
+.text-wrapper {
+    width: 28%;
+}
+
+.bigger-text-wrapper {
+    width: 45%;
+}
+}
