@@ -15,7 +15,12 @@ body {
 h1 {
     font-size: 3.6em;
     margin-top: 0;
+    margin-bottom: 0;
     padding-top: 30px;
+}
+
+h3 {
+    font-size: 2em;
 }
 
 a,
@@ -31,6 +36,7 @@ a:active {
 img {
     max-width: 100%;
     margin: 0 auto;
+    padding: 10px;
     display: block;
 }
 
@@ -42,8 +48,9 @@ button {
     text-transform: uppercase;
     color: #fff;
 
-    margin: 10px 0;
+    margin-top: 10px;
     padding: 10px;
+    width: 164px;
 }
 
 button:hover,
@@ -53,6 +60,13 @@ button:active {
 
 i {
     font-size: 1.6em;
+}
+
+input {
+    border: 1px ridge rgb(38, 38, 38);
+    
+    margin-right: 20px;
+    padding: 13px;
 }
 
 
@@ -66,6 +80,13 @@ BASE LAYOUT STYLES
     text-align: center;
 }
 
+.main-footer {
+    background-color: rgb(38, 38, 38);
+    color: #fff;
+    padding: 5px;
+}
+
+/*------ NAV BAR -----*/
 .main-nav {
     font-size: 1.5em;
 }
@@ -96,7 +117,6 @@ BASE LAYOUT STYLES
     height: 100vh;
 
     position: relative;
-
 }
 
 .home h1 {
@@ -109,6 +129,10 @@ BASE LAYOUT STYLES
     left: 50%;
     right: 50%;
     bottom: 7%;
+}
+
+.home button {
+    margin-bottom: 50px;
 }
 
 /* ====== ABOUT ME SECTION ======*/
@@ -162,23 +186,95 @@ BASE LAYOUT STYLES
 
 .gallery {
     background-color: rgb(254, 233, 46);
+    padding-bottom: 60px;
+}
+
+/*====== SUBSCRIBE SECTION =======*/
+
+.subscribe {
+    background: url(../img/bg2.png) no-repeat center;
+    background-size: cover;
+    margin: 50px auto;
+}
+
+/*======== BLOG SECTION ========*/
+
+.blog {
+    background-color: rgb(176, 124, 248);
+    padding-bottom: 60px;
+}
+
+/*========== CONTACT ========*/
+
+.contact {
+    background: url(../img/bg3.png) no-repeat center;
+    background-size: cover;
+
+    padding-bottom: 50px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    border: none;
+    background-color: rgba(0, 196, 195, 0.5);
+    
+    margin: 10px auto;
+    padding: 13px;
+    width: 100%;
+}
+
+.contact textarea {
+    resize: none;
+    height: 30vh;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    background-color: rgb(0, 196, 195);
+    border-left: 4px solid rgb(53,91,130);
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: #fff;
+}
+
+.address {
+    color: #fff;
+    padding-top: 20px;
 }
 
 
 /*==================== ELEMENTS ================*/
 
-/*----- IMGAES ----*/
+/*----- BUTTONS------ */
 
-.img-container {
-    position: relative;
-    text-align: center;
+.blue-button {
+    background-color: rgb(86,133,163);
 }
 
-.img-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.green-button {
+    background-color: rgb(151,186,44);
+}
+
+.red-button {
+    background-color: rgb(248,43,60);
+}
+
+/*----- IMAGES -----*/
+
+.gallery img,
+.blog img {
+    padding: 0;
+    margin: 20px auto;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .5);
 }
 
 /*----- LOGO ----*/
@@ -216,12 +312,35 @@ BASE LAYOUT STYLES
     width: 60%;
 }
 
+.wrapper-70 {
+    width: 70%;
+}
+
 .center-vertically {
     margin: 0;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+/*----- IMGAES ----*/
+
+.img-center-container {
+    position: relative;
+    text-align: center;
+}
+
+.img-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-container {
+    width: 70%;
+    margin: 20px auto;
 }
 
 
