@@ -7,18 +7,187 @@ BASE ELEMENT STYLE
 }
 
 body {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(38, 38, 38);
+    line-height: 1.6;
 }
 
-a {
+h1 {
+    font-size: 3.6em;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+a,
+a:visited {
     text-decoration: none;
+    color: rgb(38, 38, 38);
+}
+
+a:active {
+    color: rgb(254, 96, 51);
 }
 
 img {
     max-width: 100%;
+    margin: 0 auto;
     display: block;
 }
 
+button {
+    background-color: rgb(254, 96, 51);
+    border: none;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .5);
+
+    text-transform: uppercase;
+    color: #fff;
+
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button:hover,
+button:active {
+    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, .5);
+}
+
+i {
+    font-size: 1.6em;
+}
+
+
+
+/* ==============================
+BASE LAYOUT STYLES
+=============================== */
+
+.main-header,
+.main-footer {
+    text-align: center;
+}
+
+.main-nav {
+    font-size: 1.5em;
+}
+
+.main-nav li {
+    padding: 7px;
+    font-weight: 600;
+}
+
+.main-nav a:hover {
+    border-top: 3px solid rgb(254, 96, 51);
+}
+
+
+/* ================ SECTIONS ===============*/
+
+.about,
+.services,
+.blog {
+    color: #fff;
+}
+
+/*====== HOME SECTION =====*/
+
+.home {
+    background: url(../img/bg1.png) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+
+    position: relative;
+
+}
+
+.home h1 {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.home a {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 7%;
+}
+
+/* ====== ABOUT ME SECTION ======*/
+
+.about {
+    background-color: rgb(1, 195, 195);
+    padding-bottom: 20px;
+}
+
+/*====== SERVICES SECTION =======*/
+
+.services {
+    background-color: rgb(112,192,255);
+    padding-top: 40px;
+}
+
+.services-button {
+    background-color: #fff;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .5);
+
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 600;
+    margin: 15px auto;
+}
+
+.services-button a {
+    display: flex;
+}
+
+.services-button:hover {
+    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, .5);
+}
+
+.services-button-text {
+    flex: 3;
+
+    border-right: 1px solid rgb(38, 38, 38);
+    
+}
+
+.services-button-img {
+    flex: 1;
+}
+
+.buttons-container {
+    padding: 40px 0; 
+}
+
+/*====== GALLERY SECTION =======*/
+
+.gallery {
+    background-color: rgb(254, 233, 46);
+}
+
+
+/*==================== ELEMENTS ================*/
+
+/*----- IMGAES ----*/
+
+.img-container {
+    position: relative;
+    text-align: center;
+}
+
+.img-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*----- LOGO ----*/
+
+.logo {
+    margin: 20px auto;
+}
+
+/* ===== FOR TRANSFORMING ELEMENTS ===== */
 
 .visuallyhidden {
     border: 0;
@@ -30,3 +199,32 @@ img {
     position: absolute;
     width: 1px;
   }
+
+  .center-text {
+      text-align: center;
+  }
+
+
+/* ============ LAYOUT CONTAINERS ============ */ 
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper-60 {
+    width: 60%;
+}
+
+.center-vertically {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+  /* ================================= 
+  Media Queries
+==================================== */
