@@ -49,16 +49,19 @@
     <!-- ABOUT US SECTION START -->
 
     <section id="about" class="about">
-        <div class="wrapper">
+        <div class="wrapper flex-container">
 
-            <div class="center-text">
-                <h1>About Us</h1>
-                <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+            <div class="item">
+                <div class="wrapper">
+                    <h1>About Us</h1>
+                    <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                    <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                </div>
             </div>
 
-            
-            <img src="img/raspberries1.png" alt="raspberries">
+            <div class="item-order center-horizontally">
+                <img src="img/raspberries1.png" alt="raspberries">
+            </div>
 
         </div>
     </section>
@@ -68,14 +71,14 @@
     <!-- SERVICES SECTION START -->
 
     <section id="services" class="services">
-        <div class="wrapper">
+        <div class="wrapper flex-container">
 
-            <div class="img-center-container">
+            <div class="img-center-container item center-horizontally">
                 <img src="img/tomatos.png" alt="tomatos">
                 <h1 class="img-center">Our Services</h1>
             </div>
 
-            <div class="buttons-container">
+            <div class="buttons-container item-order">
                 <div class="services-button">
                     <a href="#">
                         <p class="services-button-text">Online Shopping</p>
@@ -122,7 +125,7 @@
     <section id="gallery" class="gallery center-text">
         <div class="wrapper">
             
-            <div>
+            <div class="center-text-wrapper">
                 <h1>Gallery</h1>
                 <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
@@ -148,8 +151,8 @@
         <div class="wrapper">
 
             <div class="bigger-text-wrapper">
-            <h3>Subscribe To Us</h3>
-            <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <h3>Subscribe To Us</h3>
+                <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
 
             <form action="index.html" method="post">
@@ -171,10 +174,12 @@
     <section id="blog" class="blog center-text">
         <div class="wrapper">
 
-            <h1>Blog</h1>
-            <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+            <div class="center-text-wrapper">
+                <h1>Blog</h1>
+                <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+            </div>
 
-            <div class="img-container">
+            <div class="img-container flex-container">
                 <img src="img/smoothie.png" alt="smoothie">
                 <img src="img/bean.png" alt="bean">
                 <img src="img/raspberries2.png" alt="raspberries">
@@ -193,43 +198,50 @@
     <section id="contact" class="contact center-text">
         <div class="wrapper">
             
-            <h1>Contact</h1>
-            <p>For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
-
-            <form>
-
-                <label for="name" class="visuallyhidden"></label>
-                <input type="text" name="user_name" id="name" placeholder="Your name...">
-
-                <label for="email" class="visuallyhidden"></label>
-                <input type="email" name="user_email" id="email" placeholder="Your address email...">
-
-                <label for="phone" class="visuallyhidden"></label>
-                <input type="tel" name="user_phone" id="phone" placeholder="Your phone number...">
-
-                <label for="message" class="visuallyhidden"></label>
-                <textarea id="message" placeholder="Your message..."></textarea>
-            </form>
-
-            <div class="address">
-                <h4>Address</h4>
-                <p>123 City name, Street, City, Country</p>
-                <h4>Email</h4>
-                <p>cahee@domain.com</p>
-                <h4>Phone</h4>
-                <p>+012 345 6789</p>
+            <div class="center-text-wrapper">
+                <h1>Contact</h1>
+                <p>For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
             </div>
-            
+
+            <div class="flex-container">
+                <form class="item">
+                    <label for="name" class="visuallyhidden"></label>
+                    <input type="text" name="user_name" id="name" placeholder="Your name...">
+
+                    <label for="email" class="visuallyhidden"></label>
+                    <input type="email" name="user_email" id="email" placeholder="Your address email...">
+
+                    <label for="phone" class="visuallyhidden"></label>
+                    <input type="tel" name="user_phone" id="phone" placeholder="Your phone number...">
+
+                    <label for="message" class="visuallyhidden"></label>
+                    <textarea id="message" placeholder="Your message..."></textarea>
+                </form>
+
+                <div class="address item">
+                    <p><strong>Address</strong></p>
+                    <p>123 City name, Street, City, Country</p>
+                    <p><strong>Email</strong></p>
+                    <p>cahee@domain.com</p>
+                    <p><strong>Phone</strong></p>
+                    <p>+012 345 6789</p>
+                </div>
+            </div>
+
         </div>
     </section>
     
     <!-- CONTACT SECTION END -->
 
     <footer class="main-footer">
-        <div class="wrapper">
-                <p>&copy;2020 Whiskaso. All rights reserved.</p>
-                <img class="logo" src="img/logo2.png" alt="logo cahee">
-                <div class="flex-container">
+        <div class="wrapper flex-container">
+                <div class="item">
+                    <p>&copy;2020 Whiskaso. All rights reserved.</p>
+                </div>
+                <div class="item">
+                    <img class="logo" src="img/logo2.png" alt="logo cahee">
+                </div>
+                <div class="item flex-container">
                     <p>Made with <span style="color:#FE2B58; font-weight:800;">love</span> by Marcin Łakomy</p>
                     <p>PSD made with <span style="color:#FE2B58; font-weight:800;">love</span> by Auskteez</p>
                 </div>

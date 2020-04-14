@@ -149,6 +149,7 @@ BASE LAYOUT STYLES
 .about {
     background-color: rgb(1, 195, 195);
     padding-bottom: 20px;
+    text-align: center;
 }
 
 /*====== SERVICES SECTION =======*/
@@ -234,7 +235,7 @@ BASE LAYOUT STYLES
     border: none;
     background-color: rgba(0, 196, 195, 0.5);
     
-    margin: 10px auto;
+    margin: 8px auto;
     padding: 13px;
     width: 100%;
 }
@@ -258,6 +259,7 @@ BASE LAYOUT STYLES
 .address {
     color: #fff;
     padding-top: 20px;
+    margin: 0 auto;
 }
 
 
@@ -333,6 +335,10 @@ BASE LAYOUT STYLES
     transform: translateY(-50%);
 }
 
+.center-horizontally {
+    margin: 0 auto;
+}
+
 /*----- IMGAES ----*/
 
 .img-center-container {
@@ -359,8 +365,7 @@ BASE LAYOUT STYLES
 
 
 @media (min-width: 640px){
-
-
+    
 /*====== NAV BAR ======*/
 
 .main-nav ul {
@@ -374,6 +379,7 @@ BASE LAYOUT STYLES
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* ============ LAYOUR CONTAINERS ============ */
@@ -392,13 +398,18 @@ BASE LAYOUT STYLES
 
 /*================= SECTIONS ==============*/
 
-/*========= SERVICES ========*/
+/*====== SERVICES SECTION =====*/
 
 .buttons-container {
     width: 90%;
     margin: 0 auto;
 }
 
+/*===== SUBSCRIBE SECTION =====*/
+
+.subscribe input {
+    width: 300px;
+}
 }
 
 @media (min-width: 880px) {
@@ -418,13 +429,45 @@ BASE LAYOUT STYLES
     padding-top: 49px;
 }
 
+/*======== FOOTER ======*/
+
+.main-footer .flex-container .flex-container {
+    flex-direction: column;
+}
+
 /*================= SECTIONS ==============*/
 
-/*========= SERVICES ========*/
+/*========= SERVICES SECTION ======*/
 
 .buttons-container {
     width: 85%;
     margin: 0 auto;
+}
+
+/*===== SUBSCRIBE SECTION =====*/
+
+.subscribe input {
+    width: 470px;
+}
+
+/*====== CONTACT SECTION =======*/
+
+.address {
+    color: rgb(38, 38, 38);
+    text-align: left;
+    align-self: flex-start;
+}
+
+.address p {
+    margin: 3px 0;
+}
+
+.contact form {
+    padding-top: 10px;
+}
+
+.contact .item {
+    margin: 25px;
 }
 
 /* ============ LAYOUR CONTAINERS ============ */
@@ -436,9 +479,37 @@ BASE LAYOUT STYLES
 .bigger-text-wrapper {
     width: 55%;
 }
+
+.column-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+/*========= FLEX ITEMS =======*/
+
+.item,
+.item-order {
+    flex: 1;
+}
+
+.item-order {
+    order: -1;
+}
 }
 
 @media (min-width: 1025px) {
+
+/*========= ELEMENTS ===========*/
+
+h1 {
+    font-size: 4.6em;
+}
+
+h3 {
+    font-size: 2.4em;
+}
 
 /*====== NAV BAR =======*/
 
@@ -446,6 +517,8 @@ BASE LAYOUT STYLES
     padding-left: 25px;
     padding-top: 41px;
 }
+
+/*====== HEADER ======*/
 
 .main-header {
     position: fixed;
@@ -456,11 +529,44 @@ BASE LAYOUT STYLES
 
 /*================= SECTIONS ==============*/
 
-/*========= SERVICES ========*/
+.contact,
+.blog,
+.gallery {
+    padding-top: 30px;
+    padding-bottom: 90px;
+}
 
-.buttons-container {
-    width: 85%;
+/*====== ABOUT SECTION ======*/
+    .about {
+        padding-top: 20px;
+        text-align: left;
+    }
+
+/*==== SERVICES SECTION ====*/
+
+.services {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.services-button {
+    width: 80%;
+}
+
+/*===== SUBSCRIBE SECTION ====*/
+
+
+.subscribe {
     margin: 0 auto;
+
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+/*===== CONTACT SECTION ====*/
+
+.contact .item {
+    margin: 40px;
 }
 
 /* ============ LAYOUR CONTAINERS ============ */
@@ -471,5 +577,14 @@ BASE LAYOUT STYLES
 
 .bigger-text-wrapper {
     width: 45%;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.center-text-wrapper {
+    width: 45%;
+    margin: 0 auto;
 }
 }
