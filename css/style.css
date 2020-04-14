@@ -39,7 +39,7 @@ a:active {
 
 img {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 10px;
     display: block;
 }
@@ -199,6 +199,16 @@ BASE LAYOUT STYLES
     padding-bottom: 60px;
 }
 
+.gallery-wide-container,
+.gallery-narrow-container,
+.gallery-left-container,
+.gallery-right-container,
+.gallery-upper-container,
+.gallery-lower-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*====== SUBSCRIBE SECTION =======*/
 
 .subscribe {
@@ -284,7 +294,6 @@ BASE LAYOUT STYLES
 .gallery img,
 .blog img {
     padding: 0;
-    margin: 20px auto;
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .5);
 }
 
@@ -355,8 +364,9 @@ BASE LAYOUT STYLES
 
 .img-container {
     width: 70%;
-    margin: 20px auto;
-}
+    margin: 40px auto;
+} 
+
 
 
   /* ================================= 
@@ -373,14 +383,6 @@ BASE LAYOUT STYLES
     justify-content: space-between;
 }
 
-/*====== FOOTER ========*/
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
 
 /* ============ LAYOUR CONTAINERS ============ */
 
@@ -394,6 +396,13 @@ BASE LAYOUT STYLES
 
 .bigger-text-wrapper {
     width: 65%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*================= SECTIONS ==============*/
@@ -414,6 +423,10 @@ BASE LAYOUT STYLES
 
 @media (min-width: 880px) {
 
+img {
+    margin: 0 auto;
+}
+
 /*====== NAV BAR =======*/
 
 .main-nav,
@@ -429,12 +442,6 @@ BASE LAYOUT STYLES
     padding-top: 49px;
 }
 
-/*======== FOOTER ======*/
-
-.main-footer .flex-container .flex-container {
-    flex-direction: column;
-}
-
 /*================= SECTIONS ==============*/
 
 /*========= SERVICES SECTION ======*/
@@ -442,6 +449,34 @@ BASE LAYOUT STYLES
 .buttons-container {
     width: 85%;
     margin: 0 auto;
+}
+
+/*===== GALLERY SECTION =====*/
+
+.gallery-wide-container {
+    width: 65%;
+    margin-bottom: 2%;
+}
+
+.gallery-narrow-container {
+    width: 33%;
+    margin-left: 2%;
+}
+
+.gallery-left-container {
+    margin-right: 1%;
+}
+
+.gallery-right-container {
+    margin-left: 1%;
+}
+
+.gallery-upper-container {
+    margin-bottom: 2%;
+}
+
+.gallery-lower-container {
+    margin-top: 2%;
 }
 
 /*===== SUBSCRIBE SECTION =====*/
@@ -484,6 +519,10 @@ BASE LAYOUT STYLES
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+.img-container {
+    width: 90%;
 }
 
 
