@@ -224,6 +224,12 @@ BASE LAYOUT STYLES
     padding-bottom: 60px;
 }
 
+/*------VIEV MORE -----*/
+
+#vievMore {
+    display: none;
+}
+
 /*========== CONTACT ========*/
 
 .contact {
